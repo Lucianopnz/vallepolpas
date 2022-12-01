@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;      
+    list-style: none;
+    text-decoration: none;       
+}
+
+
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    background: #063146;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+}
+
+.cad{
+     display: none;
+    }
+
+.wrapper .sidebar ul li{
+    
+    border-bottom: 1px solid rgba(255 ,255,255,0.05);
+}
+
+.card-panel i{
+    position: relative;
+    display: flex;
+    font-size: 40px;
+    opacity: 0.5;
+    margin-left: -40px;
+    color: rgb(5, 107, 73);
+    }
+
+    .float-left{
+        width: 65%;
+    }
+
+.card-panel i:hover{
+    opacity: 1;
+}
+
+
+
+.main {
+    width: 100%;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 0;
+}
+
+.main .header h4{
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.top-left{
+    background: #042331; ;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:70px;
+    z-index: 12;
+}
+
+.top-left img{
+    margin-left: 20px;
+}
+
+.top-right{
+    background: #383837 ;
+    width: 100%;
+    position: fixed;
+    left: 250;
+    top: 0;
+    height:70px;
+    z-index: 11;
+}
+
+.top-right span{
+    color: #FF5733;
+    position: fixed;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.top-right button{
+    position: fixed;
+    margin-top: 20px;
+    right: 20px;
+    width: 50px;
+    
+}
+
+.itens{
+    margin-top: 60px;   
+}
+
+.direito{
+        color: #FF5733;
+        position: absolute;
+        bottom: 80px;
+        left: 35%;
+        transform: translateX(-30%);
+    }
+
+    
+
+.sidebar .itens li a{
+    color: beige;     
+    padding: 10px 20px;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.sidebar .itens .ico.right{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.sidebar .itens ul {
+    background: #424242;
+    color: #e9e9e9;
+    
+}
+
+.sidebar .itens li a:hover{
+    background-color: #FF5733;
+}
+
+.cad li a i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*.itens i{               
+    
+    margin-left: 20px;
+}*/
+
+.itens span{                
+    margin-left: 10px;
+}
+
+.itens a{
+    text-decoration: none;
+    color: beige; 
+}
+
+.card-panel{
+    margin-top: 80px;                
+    margin: 10px;      
+    padding: 10px;             
+    height: 100px;                
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+    cursor: pointer;  
+    }
+
+   
+
+    .card-table{
+        margin: 10px; 
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+        height: 100%;
+        overflow: scroll;
+                
+    }
+
+    .card-table th{
+  
+        position: sticky;
+        padding: 3%;
+        
+      }
+
+    .card-grafico{
+        margin: 10px; 
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+        height: 100%;
+    }
+
+     #div_temp1{
+                  position: relative;
+                  display: inline-block;
+                  background: #ffcc00;
+                  height: 270px;
+                  width: 270px;
+                  border-radius: 50%;
+                  text-align: center;
+                  box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.1);
+              }
+              
+
+    .sidebar .legal {
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+        border-top: 1px solid #eee;
+        padding: 15px;
+        overflow: hidden; 
+    }
+
+    .sidebar .legal .copyright {
+        color: snow;
+        font-size: 13px;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+            
+    .sidebar .legal .copyright a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .despOk{
+        margin-right: 10px;;
+        
+    }
+        
+    .sidebar .legal .version {
+        white-space: nowrap;
+        color: snow;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 5px;
+        font-size: 13px; 
+    }
+
+    p {
+        margin: 0;
+    }
+
+    #tabela{
+        height: 220px;                            
+    }
+
+    #grafico{
+        height: 350px;                            
+    }
+
+    #producao{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .card-header i{
+        opacity: 0.5;
+    }
+
+    .card-header span{
+        display: flex;
+        font-size: 20px;
+        margin-left: 20px;
+        opacity: 0.7;
+    }
+
+    .base{
+        display: flex;
+    }
+
+    .active{
+        background-color: #FF5733;
+    }
+
+    .fase {
+        color: rgb(22, 168, 120);
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+            #example td{
+                padding: 4px;
+            }
+
+            #btn-novo{
+                
+                margin-top: 100px;
+            }
+
+            .icoedit{
+                font-size: 12px;
+                color: #ffcc00;
+            }
+            
+            .icotag{
+                font-size: 12px;
+                color: #00cc00;
+            }
+
+            .main .row .step1{
+                position: relative;
+                display: inline-block;
+                height: 230px;
+                width: 230px;
+                border-radius: 100%;
+                text-align: center;
+                box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.1),
+                            -30px -30px 30px -10px rgba(255 ,255,255,0.4),
+                            -0.5px -0.5px 0 rgba(255 ,255,255,1),
+                            0.5px 0.5px 0;
+            }
+
+            .cardprod {
+                float: left;
+                width: 33%;
+                padding: 0 10px;
+                margin-top: 10px;
+              }
+
+             .tit-table{                 
+                  background-color: #424242;
+                  margin-left: 20px;
+                  
+              }
+
+              @media screen and (max-width: 600px) {
+                div.sidebar {
+                  display: none;
+                }
+
+                .top-left{
+                    display: none;
+                }
+
+                .main {
+                    width: 100%;
+                    padding: 20px;
+                    margin-left: 0;
+                    margin-top: 0;
+                }
+                
+              }
+
+          
+              
